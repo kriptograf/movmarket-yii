@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+.main-left{
+	float: left;
+	padding-left:20px;
+	width:20%;
+}
+.main-center{
+	float:left;
+	padding-left:20px;
+	width:76%;
+}
+.widget{
+	float:left;
+	width:30%;
+}
+.main-content{
+	width:68%;
+	float:left;
+	margin-right: 10px;
+}

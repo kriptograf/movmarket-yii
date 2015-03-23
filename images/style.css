@@ -1,0 +1,450 @@
+@charset "utf-8";
+/* CSS Document */
+* html,body{
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+}
+body{
+font-family: "Droid Serif",Arial, Helvetica, Georgia, "Times New Roman", Times, serif;
+}
+a{
+    color: #c50e0c;
+}
+a:hover{
+    text-decoration: none;
+}
+.wrapper{
+/*background:#ff7200;*/
+background: url(../images/bg-gragient.png) repeat-x #ff7200;
+width:100%;
+min-height: 100%;
+/*background: -moz-linear-gradient(top, #fd9330, #ff7200); 
+     Chrome 1-9, Safari 4-5 
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#fd9330), color-stop(100%,#ff7200));
+
+    background: -webkit-linear-gradient(top, #fd9330, #ff7200);
+    background: -o-linear-gradient(top, #fd9330, #ff7200);
+    background: -ms-linear-gradient(top, #fd9330, #ff7200); 
+    background: linear-gradient(top, #fd9330, #ff7200);  */ 
+}
+.inner{
+height:100%;
+width:100%;
+background:url(../images/top-back.png) repeat-x;
+background-position:center top;
+}
+/*____шапка_____*/
+.header{
+height:165px;
+width:100%
+}
+.logo{
+float:left;
+padding-top:45px;
+padding-left:45px;
+}
+.logo a.logo-img{
+display:block;
+height:50px;
+width:144px;
+}
+.logo div.slogan{
+text-align:center;
+color:#fffdfc;
+font-size:13px;
+margin-top:20px;
+font-style: italic;
+}
+.phone{
+float:right;
+font-size:12px;
+font-style:italic;
+font-weight:600;
+color:#fffdfc;
+margin-top:25px;
+margin-right:15px;
+line-height:20px;
+text-transform:uppercase;
+}
+.phone span{
+font-size:14px;
+}
+.phone span.mail{
+font-size:11px;
+font-weight:bold;
+color:#973b00;
+text-transform:lowercase;
+
+}
+.mobi{
+float:right;
+font-size:12px;
+font-style:italic;
+font-weight:600;
+color:#fffdfc;
+margin-top:25px;
+margin-right:15px;
+line-height:20px;
+text-transform:uppercase;
+}
+.mobi span.mts{
+display:block;
+padding-left:30px;
+font-size:16px;
+background:url(../images/mts.png) no-repeat;
+padding-bottom:4px;
+}
+.mobi span.beeline{
+display:block;
+padding-left:30px;
+font-size:16px;
+background:url(../images/beeline.png) no-repeat;
+padding-bottom:4px;
+margin-top:10px;
+}
+.top-price{
+float:right;
+color:#fffdfc;
+font-size:48px;
+position:absolute;
+top:70px;
+left:50.5%;
+}
+/*_________основной блок________*/
+.container{
+margin:0 auto;
+width:90%;
+min-width:980px;
+}
+/*top menu*/
+.nav{
+padding-top:50px;
+width:240px;
+float:left;
+
+}
+.nav ul{
+/*list-style-image:url(../images/arrow.png);*/
+}
+.nav ul li{
+display:block;
+padding-left:20px;
+border-bottom:1px dotted #ffa041;
+background:url(../images/arrow.png) no-repeat;
+background-position:left;
+}
+.nav ul li:hover{
+background:url(../images/arrow-active.png) no-repeat;
+background-position:left;
+}
+.nav ul li a{
+display:inline-block;
+text-decoration:none;
+color:#000000;
+font-style:italic;
+width:100%;
+padding:10px;
+font-size:14px;
+font-weight:bold;
+}
+.nav ul li a:hover{
+color:#ffffff;
+}
+/*------------------------------------------*/
+.nav ul li.active{
+display:block;
+padding-left:20px;
+border-bottom:1px dotted #ffa041;
+background:url(../images/arrow-active.png) no-repeat;
+background-position:left;
+}
+.nav ul li.active a{
+display:inline-block;
+text-decoration:none;
+color:#ffffff;
+font-style:italic;
+width:100%;
+padding:10px;
+font-size:14px;
+font-weight:bold;
+}
+
+
+/*_____________форма заказа_____________*/
+.form-box{
+padding-top:50px;
+float:left;
+width:73%;
+}
+.form-table{
+	width: 100%;
+	padding: 10px;
+}
+.form-table td{
+	width:50%;
+}
+.h1{
+font-size:24px;
+text-align:center;
+font-style:italic;
+padding-left: 140px;
+font-weight:bold;
+}
+.town{
+font-size:14px;
+color:#bb2924;
+text-align:center;
+font-style:italic;
+text-transform:uppercase;
+font-size:14px;
+font-weight:bold;
+padding-left: 80px;
+}
+.form{
+background:#ff9f33;
+margin-left:60px;
+width:85%;
+margin-top:20px;
+padding:15px;
+border-radius:10px;
+font-size:12px;
+}
+.form form input.text{
+border-radius:10px;
+margin:5px;
+width:90%;
+padding:4px;
+padding-left:6px;
+
+}
+.form form input.submit{
+	border-radius: 10px 10px 10px 10px;
+    margin: 5px;
+    padding: 4px 4px 4px 6px;
+    width: 95%;
+    color:#fff;
+    border: 1px solid #fff;
+    background: -moz-linear-gradient(top, #fe5f5f, #c42221); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#fe5f5f), color-stop(100%,#c42221));
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, #fe5f5f, #c42221);
+    background: -o-linear-gradient(top, #fe5f5f, #c42221); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fe5f5f, #c42221); /* IE10 */
+    background: linear-gradient(top, #fe5f5f, #c42221); /* CSS3 */ 
+    cursor:pointer;
+}
+
+.radio-box{
+display:inline-block;
+margin:5px;
+width:94%;
+background:#f0f0f0;
+border-radius:10px;
+border:2px solid #ffffff;
+position: relative;
+}
+.radio-box label{
+	display:inline-block;
+	float:left;
+	padding:4px;
+	border:1px solid #a0a0a0;
+	background: -moz-linear-gradient(top, #fff9f4, #ffdbbb); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#fff9f4), color-stop(100%,#ffdbbb));
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, #fff9f4, #ffdbbb);
+    background: -o-linear-gradient(top, #fff9f4, #ffdbbb); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fff9f4, #ffdbbb); /* IE10 */
+    background: linear-gradient(top, #fff9f4, #ffdbbb); /* CSS3 */ 
+	
+}
+.radio-box label span{
+	display:inline-block;
+	float:left;
+	font-size: 11px;
+	padding-left: 6px;
+	color:#999999;
+}
+.radio-box label.curr-time{
+	border-radius: 10px 0 0 10px;
+	width:34.5%;
+}
+.radio-box label.selected{
+	background: -moz-linear-gradient(top, #f0f0f0, #b0b0b0); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#f0f0f0), color-stop(100%,#b0b0b0));
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, #f0f0f0, #b0b0b0);
+    background: -o-linear-gradient(top, #f0f0f0, #b0b0b0); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f0f0f0, #b0b0b0); /* IE10 */
+    background: linear-gradient(top, #f0f0f0, #b0b0b0); /* CSS3 */ 
+}
+.radio-box label.selected span{
+	color: #000;
+}
+.radio-box label.sel-date{
+	border-radius: 0 10px 10px 0;
+	width: 58.5%;
+}
+input.radio{
+	float: left;
+}
+/*____________стилизация селекта_________________*/
+.box-select {
+   display: inline-block;
+   margin: 5px;
+}
+.styled-select-month {
+   width: 75px;
+   height: 24px;
+   overflow: hidden;
+   background: url("../images/new_arrow.png") no-repeat right #fff;
+   float: left;
+   border-radius:10px;
+   margin: 5px;
+   border:2px inset #eee;
+}
+.styled-select select {
+   background: transparent;
+   width: 70px;
+   font-size: 12px;
+   border: 2px inset;
+   height: 24px;
+}
+.styled-select-month select.month {
+   background: transparent;
+   width: 95px;
+   font-size: 12px;
+   height: 24px;
+}
+select.day{
+	padding: 2px;
+	padding-left:6px;
+	border: none;
+}
+select.month{
+	border:none;
+	padding: 3px;
+}
+input.time{
+	border-radius:10px;
+	width:30%;
+	padding:4px;
+	text-align: center;
+        float: right;
+}
+/*_________меню с картинками____________*/
+.img-menu{
+clear:both;
+padding-top:50px;
+}
+.menu-items{width: 100%;}
+.menu-items li{
+display:inline-block;
+width:33%;
+}
+
+.menu-items li a{
+color:#000;
+text-decoration:none;
+}
+.item h3{
+text-align:center;
+font-style:italic;
+font-weight:bold;
+text-shadow:1px 1px 2px #ffaa57;
+}
+
+.center{
+border: 1px solid;
+ -moz-border-image: url(../images/split.png) 1 stretch stretch;
+    -webkit-border-image: url(../images/split.png) 1 stretch stretch; 
+    -o-border-image: url(../images/split.png) 1 stretch stretch;
+    border-image: url(../images/split.png) 1 stretch stretch;
+}
+
+.cennik{
+width:200px;
+height:200px;
+margin:0 auto;
+background:url(../images/cennik.png) no-repeat;
+}
+.cena{
+color:#fff;
+font-size:48px;
+display:block;
+position:relative;
+padding-top:68px;
+padding-left:55px;
+}
+
+/*________статьи_____________*/
+.post{
+padding-top:50px;
+padding-bottom:70px;
+color:#fff5b1;
+font-size:15px;
+}
+.post h1{
+font-size:24px;
+font-style:italic;
+font-weight:bold;
+margin-bottom:20px;
+color:#000;
+}
+/*_________ статьи для внутренних страниц____________*/
+.post-inner{
+    float: left;
+    width: 70%;
+    margin-left: 50px;
+padding-top:50px;
+padding-bottom:70px;
+color:#fff5b1;
+font-size:15px;
+}
+.post-inner h1{
+font-size:24px;
+font-style:italic;
+font-weight:bold;
+margin-bottom:20px;
+color:#000;
+}
+a.path{
+    color: #000;
+    text-decoration: none;
+}
+a.path:hover{
+    text-decoration: underline;
+}
+span.ext{
+    font-size: 22px;
+}
+/*__________подвал___________*/
+.footer{
+width:100%;
+height:120px;
+/*background:#c75900;*/
+background:url(../images/footer-back.png) #c75900 repeat-x;
+background-position:bottom;
+padding-top:40px;
+}
+.footer p{
+color:#ffd4a0;
+}
+.footer p span.counter{
+display:inline-block;
+margin-left:50px;
+}
+.footer p span.copy{
+display:inline-block;
+margin-left:15px;
+height:31px;
+font-size:13px;
+}
