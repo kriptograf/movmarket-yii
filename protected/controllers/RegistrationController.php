@@ -50,8 +50,8 @@ class RegistrationController extends Controller
             		 * Оптравляем уведомление админу
             		 */
             		$email = Yii::app()->email;
-					$email->to = 'foreach@mail.ru';
-					$email->subject = 'movmarket.biz - Регистрация пользователя';
+					$email->to = 'admin@example.com';
+					$email->subject = 'bla-bla.com - Регистрация пользователя';
 					$email->view = 'register';
 					$email->viewVars = array('username'=>$_POST['User']['login'],'date_register'=>date('d.m.Y H:i', time()), 'useremail'=>$_POST['User']['email']);
 					$email->send();
